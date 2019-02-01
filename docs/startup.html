@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Startup · ANS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;dpdk-environment-setup&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#dpdk-environment-setup&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DPDK environment setup&lt;/h2&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Startup · ANS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ansyun.github.io/index.html"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;dpdk-environment-setup&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#dpdk-environment-setup&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DPDK environment setup&lt;/h2&gt;
+"/><meta property="og:image" content="https://ansyun.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://ansyun.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/ans.svg" alt="ANS"/><h2 class="headerTitleWithLogo">ANS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/architecture" target="_self">Architecture</a></li><li class="siteNavGroupActive"><a href="/docs/route forwarding performance" target="_self">Performance</a></li><li class="siteNavGroupActive"><a href="/docs/build" target="_self">Guides</a></li><li class="siteNavGroupActive"><a href="/docs/commands" target="_self">API</a></li><li class=""><a href="/help" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Guides</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/build">Build</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/startup">Startup</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/commands">CLI commands</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Architecture</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/architecture">Architecture</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Performance</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/route forwarding performance">Route Forwarding Performance</a></li><li class="navListItem"><a class="navItem" href="/docs/acl performance">ACL performance</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Startup</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="dpdk-environment-setup"></a><a href="#dpdk-environment-setup" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DPDK environment setup</h2>
+<pre><code class="hljs"><span class="hljs-builtin-name">Run</span> dpdk-setup.sh<span class="hljs-built_in"> script </span><span class="hljs-keyword">to</span> <span class="hljs-builtin-name">set</span> DPDK environment. Need choice [17], [19], [20], [23].
+
+/src/dpdk-17.11.4# ./usertools/dpdk-setup.sh
+------------------------------------------------------------------------------
+ RTE_SDK exported as /root/src/dpdk-17.11.4
+------------------------------------------------------------------------------
+----------------------------------------------------------
+ <span class="hljs-keyword">Step</span> 1: Select the DPDK environment <span class="hljs-keyword">to</span> build
+----------------------------------------------------------
+[1] arm64-armv8a-linuxapp-clang
+[2] arm64-armv8a-linuxapp-gcc
+[3] arm64-dpaa2-linuxapp-gcc
+[4] arm64-dpaa-linuxapp-gcc
+[5] arm64-thunderx-linuxapp-gcc
+[6] arm64-xgene1-linuxapp-gcc
+[7] arm-armv7a-linuxapp-gcc
+[8] i686-native-linuxapp-gcc
+[9] i686-native-linuxapp-icc
+[10] ppc_64-power8-linuxapp-gcc
+[11] x86_64-native-bsdapp-clang
+[12] x86_64-native-bsdapp-gcc
+[13] x86_64-native-linuxapp-clang
+[14] x86_64-native-linuxapp-gcc
+[15] x86_64-native-linuxapp-icc
+[16] x86_x32-native-linuxapp-gcc
+
+----------------------------------------------------------
+ <span class="hljs-keyword">Step</span> 2: Setup linuxapp environment
+----------------------------------------------------------
+[17] Insert IGB UIO module
+[18] Insert VFIO module
+[19] Insert KNI module
+[20] Setup hugepage mappings <span class="hljs-keyword">for</span> non-NUMA systems
+[21] Setup hugepage mappings <span class="hljs-keyword">for</span> NUMA systems
+[22] Display current Ethernet/Crypto device<span class="hljs-built_in"> settings
+</span>[23] Bind Ethernet/Crypto device <span class="hljs-keyword">to</span> IGB UIO module
+[24] Bind Ethernet/Crypto device <span class="hljs-keyword">to</span> VFIO module
+[25] Setup VFIO permissions
+
+----------------------------------------------------------
+ <span class="hljs-keyword">Step</span> 3: <span class="hljs-builtin-name">Run</span> test application <span class="hljs-keyword">for</span> linuxapp environment
+----------------------------------------------------------
+[26] <span class="hljs-builtin-name">Run</span> test application (<span class="hljs-variable">$RTE_TARGET</span>/app/test)
+[27] <span class="hljs-builtin-name">Run</span> testpmd application <span class="hljs-keyword">in</span> interactive mode (<span class="hljs-variable">$RTE_TARGET</span>/app/testpmd)
+
+----------------------------------------------------------
+ <span class="hljs-keyword">Step</span> 4: Other tools
+----------------------------------------------------------
+[28] List hugepage <span class="hljs-builtin-name">info</span> <span class="hljs-keyword">from</span> /proc/meminfo
+
+----------------------------------------------------------
+ <span class="hljs-keyword">Step</span> 5: Uninstall <span class="hljs-keyword">and</span><span class="hljs-built_in"> system </span>cleanup
+----------------------------------------------------------
+[29] Unbind devices <span class="hljs-keyword">from</span> IGB UIO <span class="hljs-keyword">or</span> VFIO driver
+[30] <span class="hljs-builtin-name">Remove</span> IGB UIO module
+[31] <span class="hljs-builtin-name">Remove</span> VFIO module
+[32] <span class="hljs-builtin-name">Remove</span> KNI module
+[33] <span class="hljs-builtin-name">Remove</span> hugepage mappings
+
+[34] Exit<span class="hljs-built_in"> Script
+</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="ans-startup-parameters"></a><a href="#ans-startup-parameters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ANS startup parameters</h2>
+<pre><code class="hljs">root@ubuntu:~/dpdk-ans/ans<span class="hljs-comment"># ./build/ans --help</span>
+EAL: Detected <span class="hljs-number">12</span> lcore(s)
+
+Usage: ./build/ans [options]
+
+EAL common options:
+  -c COREMASK         Hexadecimal bitmask <span class="hljs-keyword">of</span> cores <span class="hljs-keyword">to</span> <span class="hljs-built_in">run</span> <span class="hljs-keyword">on</span>
+  -l CORELIST         List <span class="hljs-keyword">of</span> cores <span class="hljs-keyword">to</span> <span class="hljs-built_in">run</span> <span class="hljs-keyword">on</span>
+                      The argument format <span class="hljs-keyword">is</span> &lt;c1&gt;[-c2][,c3[-c4],...]
+                      <span class="hljs-keyword">where</span> c1, c2, etc are core indexes <span class="hljs-keyword">between</span> <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> <span class="hljs-number">128</span>
+  <span class="hljs-comment">--lcores COREMAP    Map lcore set to physical cpu set</span>
+                      The argument format <span class="hljs-keyword">is</span>
+                            '&lt;lcores[@cpus]&gt;[&lt;,lcores[@cpus]&gt;...]'
+                      lcores <span class="hljs-keyword">and</span> cpus <span class="hljs-built_in">list</span> are grouped <span class="hljs-keyword">by</span> '(' <span class="hljs-keyword">and</span> ')'
+                      Within <span class="hljs-keyword">the</span> group, '-' <span class="hljs-keyword">is</span> used <span class="hljs-keyword">for</span> range separator,
+                      ',' <span class="hljs-keyword">is</span> used <span class="hljs-keyword">for</span> single <span class="hljs-built_in">number</span> separator.
+                      '( )' can be omitted <span class="hljs-keyword">for</span> single element group,
+                      '@' can be omitted <span class="hljs-keyword">if</span> cpus <span class="hljs-keyword">and</span> lcores have <span class="hljs-keyword">the</span> same value
+  <span class="hljs-comment">--master-lcore ID   Core ID that is used as master</span>
+  -n CHANNELS         Number <span class="hljs-keyword">of</span> memory channels
+  -m MB               Memory <span class="hljs-keyword">to</span> allocate (see also <span class="hljs-comment">--socket-mem)</span>
+  -r RANKS            Force <span class="hljs-built_in">number</span> <span class="hljs-keyword">of</span> memory ranks (don't detect)
+  -b, <span class="hljs-comment">--pci-blacklist Add a PCI device in black list.</span>
+                      Prevent EAL <span class="hljs-keyword">from</span> using this PCI device. The argument
+                      format <span class="hljs-keyword">is</span> &lt;domain:bus:devid.func&gt;.
+  -w, <span class="hljs-comment">--pci-whitelist Add a PCI device in white list.</span>
+                      Only use <span class="hljs-keyword">the</span> specified PCI devices. The argument format
+                      <span class="hljs-keyword">is</span> &lt;[domain:]bus:devid.func&gt;. This option can be present
+                      several <span class="hljs-keyword">times</span> (once per device).
+                      [NOTE: PCI whitelist cannot be used <span class="hljs-keyword">with</span> -b option]
+  <span class="hljs-comment">--vdev              Add a virtual device.</span>
+                      The argument format <span class="hljs-keyword">is</span> &lt;driver&gt;&lt;<span class="hljs-built_in">id</span>&gt;[,key=val,...]
+                      (ex: <span class="hljs-comment">--vdev=net_pcap0,iface=eth2).</span>
+  -d LIB.so|DIR       Add a driver <span class="hljs-keyword">or</span> driver directory
+                      (can be used multiple <span class="hljs-keyword">times</span>)
+  <span class="hljs-comment">--vmware-tsc-map    Use VMware TSC map instead of native RDTSC</span>
+  <span class="hljs-comment">--proc-type         Type of this process (primary|secondary|auto)</span>
+  <span class="hljs-comment">--syslog            Set syslog facility</span>
+  <span class="hljs-comment">--log-level         Set default log level</span>
+  -v                  Display <span class="hljs-built_in">version</span> information <span class="hljs-keyword">on</span> startup
+  -h, <span class="hljs-comment">--help          This help</span>
+
+EAL options <span class="hljs-keyword">for</span> DEBUG use only:
+  <span class="hljs-comment">--huge-unlink       Unlink hugepage files after init</span>
+  <span class="hljs-comment">--no-huge           Use malloc instead of hugetlbfs</span>
+  <span class="hljs-comment">--no-pci            Disable PCI</span>
+  <span class="hljs-comment">--no-hpet           Disable HPET</span>
+  <span class="hljs-comment">--no-shconf         No shared config (mmap'd files)</span>
+
+EAL Linux options:
+  <span class="hljs-comment">--socket-mem        Memory to allocate on sockets (comma separated values)</span>
+  <span class="hljs-comment">--huge-dir          Directory where hugetlbfs is mounted</span>
+  <span class="hljs-comment">--file-prefix       Prefix for hugepage filenames</span>
+  <span class="hljs-comment">--base-virtaddr     Base virtual address</span>
+  <span class="hljs-comment">--create-uio-dev    Create /dev/uioX (usually done by hotplug)</span>
+  <span class="hljs-comment">--vfio-intr         Interrupt mode for VFIO (legacy|msi|msix)</span>
+  <span class="hljs-comment">--xen-dom0          Support running on Xen dom0 without hugetlbfs</span>
+
+  -p PORTMASK: hexadecimal bitmask <span class="hljs-keyword">of</span> ports <span class="hljs-keyword">to</span> configure
+  -P : enable promiscuous mode
+  <span class="hljs-comment">--config (port,queue,lcore): rx queues configuration</span>
+  <span class="hljs-comment">--no-numa: optional, disable numa awareness</span>
+  <span class="hljs-comment">--enable-kni: optional, disable kni awareness</span>
+  <span class="hljs-comment">--enable-ipsync: optional, sync ip/route from kernel kni interface</span>
+  <span class="hljs-comment">--enable-jumbo: enable jumbo frame which max packet len is PKTLEN in decimal (64-9600)</span>
+
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="ans-startup-example"></a><a href="#ans-startup-example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ANS startup example</h2>
+<pre><code class="hljs">- ANS startup without kni/ipsync
+# ./build/ans -c <span class="hljs-number">0x4</span> -n <span class="hljs-number">1</span> --base-virtaddr=<span class="hljs-number">0x2aaa2aa0000</span> -- -p <span class="hljs-number">0x1</span> --config=<span class="hljs-string">"(0,0,2)"</span>
+EAL: Detected <span class="hljs-number">12</span> lcore(s)
+EAL: <span class="hljs-number">128</span> hugepages of size <span class="hljs-number">2097152</span> reserved, but no mounted hugetlbfs found <span class="hljs-keyword">for</span> that size
+EAL: Probing VFIO support...
+EAL: PCI device <span class="hljs-number">0000</span>:<span class="hljs-number">06</span>:<span class="hljs-number">00.0</span> on NUMA socket <span class="hljs-number">-1</span>
+EAL:   probe driver: <span class="hljs-number">8086</span>:<span class="hljs-number">10f</span>b net_ixgbe
+EAL: PCI device <span class="hljs-number">0000</span>:<span class="hljs-number">06</span>:<span class="hljs-number">00.1</span> on NUMA socket <span class="hljs-number">-1</span>
+EAL:   probe driver: <span class="hljs-number">8086</span>:<span class="hljs-number">10f</span>b net_ixgbe
+EAL: PCI device <span class="hljs-number">0000</span>:<span class="hljs-number">07</span>:<span class="hljs-number">00.0</span> on NUMA socket <span class="hljs-number">-1</span>
+EAL:   probe driver: <span class="hljs-number">8086</span>:<span class="hljs-number">10f</span>b net_ixgbe
+EAL: PCI device <span class="hljs-number">0000</span>:<span class="hljs-number">07</span>:<span class="hljs-number">00.1</span> on NUMA socket <span class="hljs-number">-1</span>
+EAL:   probe driver: <span class="hljs-number">8086</span>:<span class="hljs-number">10f</span>b net_ixgbe
+param nb <span class="hljs-number">1</span> ports <span class="hljs-number">1</span>
+port id <span class="hljs-number">0</span>
+
+- ANS startup with kni/ipsync enable
+# ./build/ans -c <span class="hljs-number">0x4</span> -n <span class="hljs-number">1</span> --base-virtaddr=<span class="hljs-number">0x2aaa2aa0000</span> -- -p <span class="hljs-number">0x1</span> --config=<span class="hljs-string">"(0,0,2)"</span> --enable-kni --enable-ipsync
+
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/build"><span class="arrow-prev">← </span><span>Build</span></a><a class="docs-next button" href="/docs/commands"><span>CLI commands</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#dpdk-environment-setup">DPDK environment setup</a></li><li><a href="#ans-startup-parameters">ANS startup parameters</a></li><li><a href="#ans-startup-example">ANS startup example</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/ans.svg" alt="ANS" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/architecture.html">Architecture</a><a href="/docs/en/build.html">Guides</a><a href="/docs/en/commands.html">API</a></div><div><h5>Community</h5><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://qq.com/" target="_blank" rel="noreferrer noopener">QQ Group</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/ansyun/dpdk-ans">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/ansyun/dpdk-ans/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 Ansyun Inc.</section></footer></div></body></html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>CLI commands · ANS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;anscli-usage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#anscli-usage&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;anscli usage&lt;/h2&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="CLI commands · ANS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ansyun.github.io/index.html"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;anscli-usage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#anscli-usage&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;anscli usage&lt;/h2&gt;
+"/><meta property="og:image" content="https://ansyun.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://ansyun.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/ans.svg" alt="ANS"/><h2 class="headerTitleWithLogo">ANS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/architecture" target="_self">Architecture</a></li><li class="siteNavGroupActive"><a href="/docs/route forwarding performance" target="_self">Performance</a></li><li class="siteNavGroupActive"><a href="/docs/build" target="_self">Guides</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/commands" target="_self">API</a></li><li class=""><a href="/help" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>API</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/build">Build</a></li><li class="navListItem"><a class="navItem" href="/docs/startup">Startup</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/commands">CLI commands</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Architecture</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/architecture">Architecture</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Performance</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/route forwarding performance">Route Forwarding Performance</a></li><li class="navListItem"><a class="navItem" href="/docs/acl performance">ACL performance</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">CLI commands</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="anscli-usage"></a><a href="#anscli-usage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>anscli usage</h2>
+<pre><code class="hljs">-   Compile anscli
+<span class="hljs-comment"># make</span>
+
+-   Run anscli <span class="hljs-keyword">with</span> <span class="hljs-keyword">command</span> <span class="hljs-title">directly</span>
+<span class="hljs-comment"># ./build/anscli "help"</span>
+
+-   Run anscli
+<span class="hljs-comment"># ./build/anscli</span>
+ans&gt;
+
+-   Run anscli <span class="hljs-keyword">with</span> <span class="hljs-built_in">file</span>-prefix
+<span class="hljs-comment"># ./build/anscli --file-prefix=host</span>
+ans&gt;
+
+-   Run anscli <span class="hljs-keyword">with</span> <span class="hljs-built_in">file</span>-prefix <span class="hljs-keyword">and</span> <span class="hljs-keyword">command</span>
+<span class="hljs-comment"># ./build/anscli --file-prefix=host "help"</span>
+
+Notes：
+-   should run ans <span class="hljs-built_in">process</span> <span class="hljs-keyword">before</span> run anscli.
+-   File-prefix shall same <span class="hljs-keyword">as</span> ans’s <span class="hljs-built_in">file</span>-prefix.
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="help"></a><a href="#help" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>help</h2>
+<pre><code class="hljs">ans&gt; <span class="hljs-keyword">help</span>
+ip addr <span class="hljs-built_in">add</span> IFADDR dev STRING
+ip addr del IFADDR dev STRING
+ip addr show
+ip route <span class="hljs-built_in">add</span> DESTIP via NEXTHOP
+ip route del DESTIP
+ip route show
+ip link show
+ip neigh show
+ip stats show
+acl <span class="hljs-built_in">add</span> <span class="hljs-built_in">index</span> NUMBER srcaddr IPADDR dstaddr IPADDR srcportstart NUMBER srcportend NUMBER dstportstart NUMBER dstportend NUMBER protocol NUMBER dev IFACE
+   <span class="hljs-built_in">index</span> - ACL rule <span class="hljs-built_in">index</span> [<span class="hljs-number">1</span> - <span class="hljs-number">2048</span>], large <span class="hljs-built_in">index</span> <span class="hljs-built_in">has</span> high priority.
+   srcaddr - <span class="hljs-keyword">source</span> IP subnet address, <span class="hljs-number">0.0</span>.<span class="hljs-number">0.0</span>/<span class="hljs-number">0</span> <span class="hljs-keyword">match</span> <span class="hljs-keyword">all</span> IP, [ip-address/mask]
+   dstaddr - destination IP subnet address, <span class="hljs-number">0.0</span>.<span class="hljs-number">0.0</span>/<span class="hljs-number">0</span> <span class="hljs-keyword">match</span> <span class="hljs-keyword">all</span> IP, [ip-address/mask]
+   srcportstart - <span class="hljs-keyword">source</span> port start [<span class="hljs-number">0</span>...<span class="hljs-number">65535</span>]
+   srcportend - <span class="hljs-keyword">source</span> port end [<span class="hljs-number">0</span>...<span class="hljs-number">65535</span>]
+   dstportstart - destination port start [<span class="hljs-number">0</span>...<span class="hljs-number">65535</span>]
+   dstportend - destination port start [<span class="hljs-number">0</span>...<span class="hljs-number">65535</span>]
+   protocol - IP protocol, <span class="hljs-number">0</span> <span class="hljs-keyword">match</span> <span class="hljs-keyword">all</span> protocol, [<span class="hljs-number">0</span>...<span class="hljs-number">255</span>]
+   iface - <span class="hljs-built_in">input</span> interface name, <span class="hljs-string">'any'</span> <span class="hljs-keyword">match</span> <span class="hljs-keyword">all</span> iface
+   <span class="hljs-keyword">drop</span>|accept - drops <span class="hljs-built_in">or</span> accepts <span class="hljs-keyword">all</span> packets that <span class="hljs-keyword">match</span> the rule
+ note: <span class="hljs-keyword">match</span> ACL rule at PREROUTING.
+acl del <span class="hljs-built_in">index</span> NUMBER
+   <span class="hljs-built_in">index</span> - ACL rule <span class="hljs-built_in">index</span> [<span class="hljs-number">1</span> - <span class="hljs-number">2048</span>]
+acl show
+bypass <span class="hljs-built_in">add</span>...
+bypass del...
+   protocol - IP protocol, <span class="hljs-number">0</span> <span class="hljs-keyword">match</span> <span class="hljs-keyword">all</span> protocol, [<span class="hljs-number">0</span>...<span class="hljs-number">255</span>]
+   srcport - <span class="hljs-keyword">source</span> port, <span class="hljs-number">0</span> <span class="hljs-keyword">match</span> <span class="hljs-keyword">all</span> <span class="hljs-keyword">source</span> port, [<span class="hljs-number">0</span>...<span class="hljs-number">65535</span>]
+   dstport - destination port, <span class="hljs-number">0</span> <span class="hljs-keyword">match</span> <span class="hljs-keyword">all</span> destination port, [<span class="hljs-number">0</span>...<span class="hljs-number">65535</span>]
+ note: <span class="hljs-keyword">match</span> bypass rule at PREROUTING.
+         bypas<span class="hljs-variable">s:</span> forward packets <span class="hljs-keyword">to</span> kernel.
+bypass show
+flow <span class="hljs-built_in">filter</span> <span class="hljs-built_in">add</span> ...
+flow <span class="hljs-built_in">filter</span> del ...
+   portid - DPDK port id
+   dstip - destination IP address, <span class="hljs-number">0.0</span>.<span class="hljs-number">0.0</span>: disable destination IP <span class="hljs-built_in">filter</span>
+   dstport - destination port, <span class="hljs-number">0</span>: disable destination port <span class="hljs-built_in">filter</span>
+   queueid - RX queue id of the DPDK port
+ note: <span class="hljs-keyword">match</span> the rule traffic will <span class="hljs-keyword">be</span> forwarded the queue.
+flow <span class="hljs-built_in">filter</span> show
+port queue show
+<span class="hljs-built_in">log</span> level <span class="hljs-keyword">set</span> [emerg | alert | crit | err | warning | notice | info | <span class="hljs-keyword">debug</span>]
+<span class="hljs-keyword">help</span>
+<span class="hljs-keyword">quit</span>
+ans&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="configure-ip"></a><a href="#configure-ip" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure IP</h2>
+<pre><code class="hljs">-   <span class="hljs-builtin-name">Add</span><span class="hljs-built_in"> IP
+</span>ans&gt;<span class="hljs-built_in"> ip </span>addr <span class="hljs-builtin-name">add</span> 10.10.10.10/24 dev veth0
+<span class="hljs-builtin-name">Add</span><span class="hljs-built_in"> IP address </span>successfully
+ans&gt;
+
+-   Delete<span class="hljs-built_in"> IP
+</span>ans&gt;<span class="hljs-built_in"> ip </span>addr del 10.10.10.10/24 dev veth0
+Del<span class="hljs-built_in"> IP address </span>successfully
+ans&gt;
+
+-   Show<span class="hljs-built_in"> IP
+</span>ans&gt;<span class="hljs-built_in"> ip </span>addr show
+
+ eth0: mtu 1500
+   link/ether 08:00:27:de:5d:8e
+   inet addr: 10.0.0.2/24
+ans&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="configure-route"></a><a href="#configure-route" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure route</h2>
+<pre><code class="hljs">-   <span class="hljs-builtin-name">Add</span><span class="hljs-built_in"> route
+</span>ans&gt;<span class="hljs-built_in"> ip route </span><span class="hljs-builtin-name">add</span> 20.0.0.0/24 via 10.0.0.20
+<span class="hljs-builtin-name">Add</span><span class="hljs-built_in"> routing </span>successfully
+ans&gt;
+
+-   Delete<span class="hljs-built_in"> route
+</span>ans&gt;<span class="hljs-built_in"> ip route </span>del 20.0.0.0/24
+Del<span class="hljs-built_in"> routing </span>successfully
+ans&gt;
+
+-   Show<span class="hljs-built_in"> route
+</span>ans&gt;<span class="hljs-built_in"> ip route </span>show
+
+ANS<span class="hljs-built_in"> IP routing </span>table
+ 10.0.0.0/24 via dev veth0 src 10.0.0.2
+ 10.10.0.0/24 via 10.0.0.5 dev veth0
+ans&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="configure-neigh"></a><a href="#configure-neigh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure neigh</h2>
+<pre><code class="hljs">-   Show arp table
+ans&gt;<span class="hljs-built_in"> ip </span>neigh show
+
+ANS<span class="hljs-built_in"> IP </span>neigh table
+   10.0.0.11 dev veth0 lladdr 08:00:27:82:ca:ad REACHABLE
+ans&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="configure-link"></a><a href="#configure-link" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure link</h2>
+<pre><code class="hljs">-   <span class="hljs-keyword">Show</span> <span class="hljs-keyword">link</span> <span class="hljs-keyword">status</span>
+ans&gt; ip <span class="hljs-keyword">link</span> <span class="hljs-keyword">show</span>
+
+ veth0: port <span class="hljs-number">0</span> state UP speed <span class="hljs-number">1000</span>Mbps <span class="hljs-keyword">full</span>-duplex mtu <span class="hljs-number">1500</span>
+   <span class="hljs-keyword">link</span>/ether <span class="hljs-number">08</span>:<span class="hljs-number">00</span>:<span class="hljs-number">27</span>:de:<span class="hljs-number">5</span>d:<span class="hljs-number">8</span>e
+   RX packets:<span class="hljs-number">29</span> <span class="hljs-keyword">errors</span>:<span class="hljs-number">0</span> dropped:<span class="hljs-number">0</span>
+   TX packets:<span class="hljs-number">4</span> <span class="hljs-keyword">errors</span>:<span class="hljs-number">0</span> dropped:<span class="hljs-number">0</span>
+   RX <span class="hljs-keyword">bytes</span>:<span class="hljs-number">5433</span> TX <span class="hljs-keyword">bytes</span>:<span class="hljs-number">312</span>
+ans&gt;
+<span class="hljs-number">.6</span>. <span class="hljs-keyword">Show</span> IP <span class="hljs-keyword">statistics</span>
+ans&gt; ip stats <span class="hljs-keyword">show</span>
+ Total packets received               :<span class="hljs-number">33</span>
+ <span class="hljs-keyword">Checksum</span> bad                         :<span class="hljs-number">0</span>
+ Packet too <span class="hljs-keyword">short</span>                     :<span class="hljs-number">0</span>
+ <span class="hljs-keyword">Not</span> enough <span class="hljs-keyword">data</span>                      :<span class="hljs-number">0</span>
+ IP header <span class="hljs-keyword">length</span> &lt; <span class="hljs-keyword">data</span> <span class="hljs-keyword">size</span>         :<span class="hljs-number">0</span>
+ IP <span class="hljs-keyword">length</span> &lt; ip header <span class="hljs-keyword">length</span>         :<span class="hljs-number">0</span>
+ Fragments received                   :<span class="hljs-number">0</span>
+ Frags dropped (dups, <span class="hljs-keyword">out</span> <span class="hljs-keyword">of</span> <span class="hljs-keyword">space</span>)   :<span class="hljs-number">0</span>
+ Fragments timed <span class="hljs-keyword">out</span>                  :<span class="hljs-number">0</span>
+ Packets forwarded                    :<span class="hljs-number">0</span>
+ Packets <span class="hljs-keyword">fast</span> forwarded               :<span class="hljs-number">0</span>
+ Packets rcvd <span class="hljs-keyword">for</span> unreachable dest    :<span class="hljs-number">0</span>
+ Packets forwarded <span class="hljs-keyword">on</span> same net        :<span class="hljs-number">0</span>
+ <span class="hljs-literal">Unknown</span> <span class="hljs-keyword">or</span> unsupported protocol      :<span class="hljs-number">0</span>
+ Datagrams delivered <span class="hljs-keyword">to</span> <span class="hljs-keyword">upper</span> <span class="hljs-keyword">level</span>   :<span class="hljs-number">31</span>
+ Total ip packets <span class="hljs-keyword">generated</span> here      :<span class="hljs-number">3</span>
+ Lost packets due <span class="hljs-keyword">to</span> nobufs, etc.     :<span class="hljs-number">0</span>
+ Total packets reassembled ok         :<span class="hljs-number">0</span>
+ Datagrams successfully fragmented    :<span class="hljs-number">0</span>
+ <span class="hljs-keyword">Output</span> fragments created             :<span class="hljs-number">0</span>
+ Don<span class="hljs-string">'t fragment flag was set, etc.    :0
+ Error in option processing           :0
+ Packets discarded due to no route    :0
+ IP version != 4                      :0
+ Total raw ip packets generated       :0
+ IP length &gt; max ip packet size       :0
+ Multicasts for unregistered grps     :0
+ No match gif found                   :0
+ Invalid address on header            :0
+ Packets filtered                     :0
+ans&gt;
+</span></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="configure-acl"></a><a href="#configure-acl" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure ACL</h2>
+<pre><code class="hljs">-   <span class="hljs-builtin-name">Add</span> acl rule
+ans&gt; acl <span class="hljs-builtin-name">add</span> index 100 srcaddr 10.10.10.0/24 dstaddr 20.20.20.0/24 srcportstart 0 srcportend 65535 dstportstart 0 dstportend 65535 protocol 0 iface any drop
+<span class="hljs-builtin-name">Add</span> ACL rule successfully
+ans&gt;
+
+-   Delete acl rule
+ans&gt; acl del index 100
+Delete ACL rule successfully
+ans&gt;
+
+-   Show acl rule
+
+ans&gt; acl show
+
+ACL rule 100:
+  Source subnet<span class="hljs-built_in"> address </span>     : 10.10.10.0/24
+  Destination subnet<span class="hljs-built_in"> address </span>: 20.20.20.0/24
+  Source<span class="hljs-built_in"> port </span>range          : 0 - 65535
+  Destination<span class="hljs-built_in"> port </span>range     : 0 - 65535
+ <span class="hljs-built_in"> IP </span>protocol                : 0
+ <span class="hljs-built_in"> Interface </span>name             : any
+  Action                     : drop
+ans&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="configure-bypass"></a><a href="#configure-bypass" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure bypass</h2>
+<pre><code class="hljs">-   <span class="hljs-builtin-name">Add</span> bypass rule
+ans&gt; bypass <span class="hljs-builtin-name">add</span> protocol 17 dstport 68
+<span class="hljs-builtin-name">Add</span> bypass rule successfully
+ans&gt;
+
+-   Delete bypass rule
+ans&gt; bypass del protocol 17 dstport 68
+Del bypass rule successfully
+ans&gt;
+
+-   Show bypass rule
+
+ans&gt; bypass show
+
+Bypass rule 0:
+ <span class="hljs-built_in"> IP </span>protocol        : 17
+  Destination<span class="hljs-built_in"> port </span>  : 68
+ans&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="show-port-queue"></a><a href="#show-port-queue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Show port queue</h2>
+<pre><code class="hljs">-   Show<span class="hljs-built_in"> port queue </span>lcore mapping
+
+ans&gt;<span class="hljs-built_in"> port queue </span>show
+       <span class="hljs-built_in"> port </span>   <span class="hljs-built_in"> queue </span>  lcore
+        0        0       1
+        0        1       2
+ans&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="configure-flow"></a><a href="#configure-flow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure flow</h2>
+<pre><code class="hljs">- <span class="hljs-builtin-name">Add</span> flow<span class="hljs-built_in"> filter </span>rule
+ans&gt; flow<span class="hljs-built_in"> filter </span><span class="hljs-builtin-name">add</span> portid 0 dstip 10.0.0.2 dstport 80 queueid 1
+<span class="hljs-builtin-name">Add</span> flow<span class="hljs-built_in"> filter </span>successfully
+ans&gt;
+
+-   Delete flow<span class="hljs-built_in"> filter </span>rule
+ans&gt; flow<span class="hljs-built_in"> filter </span>del portid 0 dstip 10.0.0.3 dstport 80 queueid 0
+Del flow<span class="hljs-built_in"> filter </span>rule successfully
+ans&gt;
+
+-   Show flow<span class="hljs-built_in"> filter </span>rule
+ans&gt; flow<span class="hljs-built_in"> filter </span>show
+
+Flow<span class="hljs-built_in"> filter </span>rule 0:
+ <span class="hljs-built_in"> Port </span>ID               : 0
+  Destination<span class="hljs-built_in"> IP </span>       : 10.0.0.2
+  Destination<span class="hljs-built_in"> port </span>     : 80
+ <span class="hljs-built_in"> Queue </span>ID              : 1
+
+Flow<span class="hljs-built_in"> filter </span>rule 1:
+ <span class="hljs-built_in"> Port </span>ID               : 0
+  Destination<span class="hljs-built_in"> IP </span>       : 10.0.0.3
+  Destination<span class="hljs-built_in"> port </span>     : 80
+ <span class="hljs-built_in"> Queue </span>ID              : 0
+ans&gt;
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/startup"><span class="arrow-prev">← </span><span>Startup</span></a><a class="docs-next button" href="/docs/architecture"><span>Architecture</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#anscli-usage">anscli usage</a></li><li><a href="#help">help</a></li><li><a href="#configure-ip">Configure IP</a></li><li><a href="#configure-route">Configure route</a></li><li><a href="#configure-neigh">Configure neigh</a></li><li><a href="#configure-link">Configure link</a></li><li><a href="#configure-acl">Configure ACL</a></li><li><a href="#configure-bypass">Configure bypass</a></li><li><a href="#show-port-queue">Show port queue</a></li><li><a href="#configure-flow">Configure flow</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/ans.svg" alt="ANS" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/architecture.html">Architecture</a><a href="/docs/en/build.html">Guides</a><a href="/docs/en/commands.html">API</a></div><div><h5>Community</h5><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://qq.com/" target="_blank" rel="noreferrer noopener">QQ Group</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/ansyun/dpdk-ans">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/ansyun/dpdk-ans/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 Ansyun Inc.</section></footer></div></body></html>
