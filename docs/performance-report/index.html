@@ -1,5 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Performance Report · ANS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;&lt;a href=&quot;https://github.com/ansyun/dpdk-ans/tree/master/doc/guides/ans_performance_report.pdf&quot;&gt;ANS Performance Report&lt;/a&gt;&lt;/p&gt;
-"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Performance Report · ANS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ansyun.github.io/index.html"/><meta property="og:description" content="&lt;p&gt;&lt;a href=&quot;https://github.com/ansyun/dpdk-ans/tree/master/doc/guides/ans_performance_report.pdf&quot;&gt;ANS Performance Report&lt;/a&gt;&lt;/p&gt;
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Performance Report · ANS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;performance-report&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#performance-report&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance Report&lt;/h2&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Performance Report · ANS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ansyun.github.io/index.html"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;performance-report&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#performance-report&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance Report&lt;/h2&gt;
 "/><meta property="og:image" content="https://ansyun.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://ansyun.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/ans_logo.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/ans.svg" alt="ANS"/><h2 class="headerTitleWithLogo">ANS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/architecture" target="_self">Architecture</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/performance-report" target="_self">Performance</a></li><li class="siteNavGroupActive"><a href="/docs/build" target="_self">Guides</a></li><li class="siteNavGroupActive"><a href="/docs/commands" target="_self">API</a></li><li class="siteNavGroupActive"><a href="/docs/application-example" target="_self">Application</a></li><li class=""><a href="/help" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Performance</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/build">Build</a></li><li class="navListItem"><a class="navItem" href="/docs/startup">Startup</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/commands">CLI commands</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Architecture</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/architecture">Architecture</a></li><li class="navListItem"><a class="navItem" href="/docs/container-solution">Container Solution</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Performance</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/performance-report">Performance Report</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Application</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/application-example">Application Example</a></li></ul></div></div></section></div><script>
             var coll = document.getElementsByClassName('collapsible');
             var checkActiveCategory = true;
@@ -50,5 +50,143 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Performance Report</h1></header><article><div><span><p><a href="https://github.com/ansyun/dpdk-ans/tree/master/doc/guides/ans_performance_report.pdf">ANS Performance Report</a></p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/container-solution"><span class="arrow-prev">← </span><span>Container Solution</span></a><a class="docs-next button" href="/docs/application-example"><span>Application Example</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/ans.svg" alt="ANS" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/architecture.html">Architecture</a><a href="/docs/build.html">Guides</a><a href="/docs/commands.html">API</a></div><div><h5>Community</h5><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://www.qq.com/" target="_blank" rel="noreferrer noopener">QQ Group</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/ansyun/dpdk-ans">GitHub</a><a class="github-button" href="https://github.com/ansyun/dpdk-ans" data-icon="octicon-star" data-count-href="/ansyun/dpdk-ans/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 Ansyun Inc.</section></footer></div></body></html>
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Performance Report</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="performance-report"></a><a href="#performance-report" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Performance Report</h2>
+<p><a href="https://github.com/ansyun/dpdk-ans/tree/master/doc/guides/ans_performance_report.pdf">ANS Performance Report</a></p>
+<h2><a class="anchor" aria-hidden="true" id="l3-forwarding-with-nic-performance-testing"></a><a href="#l3-forwarding-with-nic-performance-testing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>L3 forwarding with NIC performance testing</h2>
+<p>ENV: CPU- Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz, NIC- Intel 82599ES 10-Gigabit,  Test tool:pktgen-DPDK</p>
+<pre><code class="hljs">    |<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">      L3 forwarding performance       </span>|
+    |<span class="hljs-string">             (one lcore)              </span>|
+    |<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string"> Packet size(byte)</span>|<span class="hljs-string"> Throughput(Mpps)  </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|
+    |<span class="hljs-string">     64           </span>|<span class="hljs-string">       11.78       </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">     128          </span>|<span class="hljs-string">      Line Rate    </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+</span></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="l3-forwarding-with-nic-with-1000-acl-performance-testing"></a><a href="#l3-forwarding-with-nic-with-1000-acl-performance-testing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>L3 forwarding with NIC with 1000 ACL performance testing</h2>
+<p>ENV: CPU- Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz, NIC- Intel 82599ES 10-Gigabit,  Test tool:pktgen-DPDK</p>
+<pre><code class="hljs">    |<span class="hljs-string">---------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">L3 forwarding with 1000 ACL performance</span>|
+    |<span class="hljs-string">             (one lcore)               </span>|
+    |<span class="hljs-string">---------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string"> Packet size(byte)</span>|<span class="hljs-string"> Throughput(Mpps)   </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">---------------------------------------</span>|
+    |<span class="hljs-string">     64           </span>|<span class="hljs-string">       8.43         </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">---------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">     128          </span>|<span class="hljs-string">      Line Rate     </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">---------------------------------------</span>|<span class="hljs-string"> 
+</span></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="l3-forwarding-with-vhost-virtio-performance-testing"></a><a href="#l3-forwarding-with-vhost-virtio-performance-testing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>L3 forwarding with vhost/virtio performance testing</h2>
+<p>ENV: Intel(R) Xeon(R) CPU E5-2618L v4 @ 2.20GHz, NIC- vhost/virtio,  Test tool:pktgen-DPDK</p>
+<pre><code class="hljs">    |<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">      L3 forwarding performance       </span>|
+    |<span class="hljs-string">             (one lcore)              </span>|
+    |<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string"> Packet size(byte)</span>|<span class="hljs-string"> Throughput(Mpps)  </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|
+    |<span class="hljs-string">     64           </span>|<span class="hljs-string">       6.33        </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">     128          </span>|<span class="hljs-string">       5.94        </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">     256          </span>|<span class="hljs-string">     Line Rate     </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+</span></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="dpdk-nginx-cps-performance"></a><a href="#dpdk-nginx-cps-performance" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>dpdk-nginx CPS performance</h2>
+<pre><code class="hljs">CPU: Intel(R) Xeon(R) CPU E5<span class="hljs-number">-2683</span> v3 @ <span class="hljs-number">2.00</span>GHz
+NIC:<span class="hljs-number">82599</span>ES <span class="hljs-number">10</span>-Gigabit SFI/SFP+ Network Connection (rev <span class="hljs-number">01</span>) 
+ANS run on a lcore.
+<span class="hljs-number">4</span> dpdk-nginx run on ANS.
+
+# ./wrk --timeout=<span class="hljs-number">1</span> --latency -H <span class="hljs-string">"Connection: close"</span> -t20 -c100 -d30s http:<span class="hljs-comment">//10.0.0.2</span>
+Running <span class="hljs-number">30</span>s test @ http:<span class="hljs-comment">//10.0.0.2</span>
+  <span class="hljs-number">20</span> threads <span class="hljs-keyword">and</span> <span class="hljs-number">100</span> connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   <span class="hljs-number">480.80</span>us   <span class="hljs-number">73.12</span>us   <span class="hljs-number">4.66</span>ms   <span class="hljs-number">88.86</span>%
+    Req/Sec     <span class="hljs-number">5.32</span>k   <span class="hljs-number">125.94</span>     <span class="hljs-number">6.98</span>k    <span class="hljs-number">84.30</span>%
+  Latency Distribution
+     <span class="hljs-number">50</span>%  <span class="hljs-number">478.00</span>us
+     <span class="hljs-number">75</span>%  <span class="hljs-number">505.00</span>us
+     <span class="hljs-number">90</span>%  <span class="hljs-number">535.00</span>us
+     <span class="hljs-number">99</span>%  <span class="hljs-number">648.00</span>us
+  <span class="hljs-number">3186335</span> requests <span class="hljs-keyword">in</span> <span class="hljs-number">30.10</span>s, <span class="hljs-number">2.51</span>GB read
+Requests/sec: <span class="hljs-number">105860.26</span>
+Transfer/sec:     <span class="hljs-number">85.31</span>MB
+
+ANS run on two lcore.
+<span class="hljs-number">8</span> dpdk-nginx run on ANS.
+# ./wrk --timeout=<span class="hljs-number">1</span> --latency -H <span class="hljs-string">"Connection: close"</span> -t20 -c100 -d30s http:<span class="hljs-comment">//10.0.0.2</span>
+Running <span class="hljs-number">30</span>s test @ http:<span class="hljs-comment">//10.0.0.2</span>
+  <span class="hljs-number">20</span> threads <span class="hljs-keyword">and</span> <span class="hljs-number">100</span> connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   <span class="hljs-number">251.70</span>us   <span class="hljs-number">89.45</span>us   <span class="hljs-number">4.39</span>ms   <span class="hljs-number">68.59</span>%
+    Req/Sec    <span class="hljs-number">10.28</span>k   <span class="hljs-number">340.17</span>    <span class="hljs-number">12.40</span>k    <span class="hljs-number">67.67</span>%
+  Latency Distribution
+     <span class="hljs-number">50</span>%  <span class="hljs-number">246.00</span>us
+     <span class="hljs-number">75</span>%  <span class="hljs-number">310.00</span>us
+     <span class="hljs-number">90</span>%  <span class="hljs-number">363.00</span>us
+     <span class="hljs-number">99</span>%  <span class="hljs-number">480.00</span>us
+  <span class="hljs-number">6155775</span> requests <span class="hljs-keyword">in</span> <span class="hljs-number">30.10</span>s, <span class="hljs-number">4.84</span>GB read
+Requests/sec: <span class="hljs-number">204512.88</span>
+Transfer/sec:    <span class="hljs-number">164.81</span>MB
+
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="dpdk-nginx-qps-performance"></a><a href="#dpdk-nginx-qps-performance" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>dpdk-nginx QPS performance</h2>
+<pre><code class="hljs">CPU: Intel(R) Xeon(R) CPU E5<span class="hljs-number">-2683</span> v3 @ <span class="hljs-number">2.00</span>GHz
+NIC:<span class="hljs-number">82599</span>ES <span class="hljs-number">10</span>-Gigabit SFI/SFP+ Network Connection (rev <span class="hljs-number">01</span>) 
+ANS run on a lcore.
+<span class="hljs-number">8</span> dpdk-nginx run on ANS.
+
+# ./wrk --timeout=<span class="hljs-number">1</span> --latency -t20 -c100 -d30s http:<span class="hljs-comment">//10.0.0.2</span>
+Running <span class="hljs-number">30</span>s test @ http:<span class="hljs-comment">//10.0.0.2</span>
+  <span class="hljs-number">20</span> threads <span class="hljs-keyword">and</span> <span class="hljs-number">100</span> connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   <span class="hljs-number">257.91</span>us  <span class="hljs-number">407.36</span>us  <span class="hljs-number">24.37</span>ms   <span class="hljs-number">98.77</span>%
+    Req/Sec    <span class="hljs-number">20.85</span>k     <span class="hljs-number">1.84</span>k   <span class="hljs-number">26.88</span>k    <span class="hljs-number">70.23</span>%
+  Latency Distribution
+     <span class="hljs-number">50</span>%  <span class="hljs-number">214.00</span>us
+     <span class="hljs-number">75</span>%  <span class="hljs-number">289.00</span>us
+     <span class="hljs-number">90</span>%  <span class="hljs-number">338.00</span>us
+     <span class="hljs-number">99</span>%  <span class="hljs-number">825.00</span>us
+  <span class="hljs-number">12488349</span> requests <span class="hljs-keyword">in</span> <span class="hljs-number">30.10</span>s, <span class="hljs-number">9.89</span>GB read
+Requests/sec: <span class="hljs-number">414900.42</span>
+Transfer/sec:    <span class="hljs-number">336.31</span>MB
+
+ANS run on two lcore.
+<span class="hljs-number">10</span> dpdk-nginx run on ANS.
+# ./wrk --timeout=<span class="hljs-number">1</span> --latency -t20 -c100 -d30s http:<span class="hljs-comment">//10.0.0.2</span>
+Running <span class="hljs-number">30</span>s test @ http:<span class="hljs-comment">//10.0.0.2</span>
+  <span class="hljs-number">20</span> threads <span class="hljs-keyword">and</span> <span class="hljs-number">100</span> connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   <span class="hljs-number">184.60</span>us  <span class="hljs-number">165.39</span>us  <span class="hljs-number">12.97</span>ms   <span class="hljs-number">98.92</span>%
+    Req/Sec    <span class="hljs-number">26.69</span>k     <span class="hljs-number">0.93</span>k   <span class="hljs-number">29.92</span>k    <span class="hljs-number">79.17</span>%
+  Latency Distribution
+     <span class="hljs-number">50</span>%  <span class="hljs-number">186.00</span>us
+     <span class="hljs-number">75</span>%  <span class="hljs-number">200.00</span>us
+     <span class="hljs-number">90</span>%  <span class="hljs-number">216.00</span>us
+     <span class="hljs-number">99</span>%  <span class="hljs-number">370.00</span>us
+  <span class="hljs-number">15985217</span> requests <span class="hljs-keyword">in</span> <span class="hljs-number">30.10</span>s, <span class="hljs-number">12.65</span>GB read
+Requests/sec: <span class="hljs-number">531077.97</span>
+Transfer/sec:    <span class="hljs-number">430.48</span>MB
+
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="udp-application-performance-testing"></a><a href="#udp-application-performance-testing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>UDP application performance testing</h2>
+<pre><code class="hljs">CPU: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz
+NIC:82599ES 10-Gigabit SFI/SFP+ Network Connection (rev 01)
+ANS run on a lcore.
+UDP application run on ANS.
+
+    |<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">      UDP application throughput      </span>|
+    |<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string"> Packet size(byte)</span>|<span class="hljs-string"> Throughput(MBps)  </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|
+    |<span class="hljs-string">     64           </span>|<span class="hljs-string">       3644        </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">     128          </span>|<span class="hljs-string">       5971        </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">     256          </span>|<span class="hljs-string">     Line Rate     </span>|<span class="hljs-string"> 
+    </span>|<span class="hljs-string">--------------------------------------</span>|<span class="hljs-string"> 
+</span></code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/container-solution"><span class="arrow-prev">← </span><span>Container Solution</span></a><a class="docs-next button" href="/docs/application-example"><span>Application Example</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#performance-report">Performance Report</a></li><li><a href="#l3-forwarding-with-nic-performance-testing">L3 forwarding with NIC performance testing</a></li><li><a href="#l3-forwarding-with-nic-with-1000-acl-performance-testing">L3 forwarding with NIC with 1000 ACL performance testing</a></li><li><a href="#l3-forwarding-with-vhost-virtio-performance-testing">L3 forwarding with vhost/virtio performance testing</a></li><li><a href="#dpdk-nginx-cps-performance">dpdk-nginx CPS performance</a></li><li><a href="#dpdk-nginx-qps-performance">dpdk-nginx QPS performance</a></li><li><a href="#udp-application-performance-testing">UDP application performance testing</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/ans.svg" alt="ANS" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/architecture.html">Architecture</a><a href="/docs/build.html">Guides</a><a href="/docs/commands.html">API</a></div><div><h5>Community</h5><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://www.qq.com/" target="_blank" rel="noreferrer noopener">QQ Group</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/ansyun/dpdk-ans">GitHub</a><a class="github-button" href="https://github.com/ansyun/dpdk-ans" data-icon="octicon-star" data-count-href="/ansyun/dpdk-ans/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 Ansyun Inc.</section></footer></div></body></html>
